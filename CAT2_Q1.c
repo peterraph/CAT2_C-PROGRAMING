@@ -1,30 +1,24 @@
 #include <stdio.h>
 
 struct Employee {
-    char name[25];
+    char name[25],  char department[20],  char email[50];
     int id;
-    char department[20];
     float salary;
-    char email[50];
-};
+
 
 int main() {
-    // Declare and initialize an Employee structure variable with specified data
-    struct Employee emplo = {
-        "John Doe",             // name
-        12345,                  // id
-        "Human resources",      // department
-        55000.50,               // salary
-        "johndoe@company.com"   // email
-    };
+    
+strcpy(Employee.name, "John Doe");
+    strcpy(Employee.department,"Human resources");
+        strcpy(Employee.email,"johndoe@company.com");
+      Employee.id = 12345;
+       Employee.salary = 55000.50;
 
-    // Display the employee information
-    printf("Employee Information:\n");
-    printf("Name: %s\n", emplo.name);
-    printf("ID: %d\n", emplo.id);
-    printf("Department: %s\n", emplo.department);
-    printf("Salary: %.2f\n", emplo.salary);
-    printf("Email: %s\n", emplo.email);
+    printf("Name: %s\n", Employee.name);
+    printf("ID: %d\n", Employee.id);
+    printf("Department: %s\n", Employee.department);
+    printf("Salary: %.2f\n", Employee.salary);
+    printf("Email: %s\n", Employee.email);
 
     return 0;
 }
